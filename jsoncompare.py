@@ -22,10 +22,11 @@ class JsonCompare(object):
            list order which is ignored by default where present and is controlled by 'keeporder' parameter
            :params expected - JSON structure whose data you expect to see in actual
            :params actual   - JSON structure against which you are comparing.
+           :params debug    - enable console output for internal variables like recursively extracted JSON substructures
            :params keeporder - turn list order on
            :params printstdout - turn console output on if you are using this as a standalone application
         """
-        
+
         self.debug = debug
         self.keeporder = keeporder
         self.print_to_stdout = printstdout
